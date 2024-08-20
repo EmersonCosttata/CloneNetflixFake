@@ -10,14 +10,12 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 function App() {
   const { isAuthenticated } = useAuth();
   return (
-    <Router>
       <Routes>
         <Route path="/" element={isAuthenticated ? <Home /> : <Login />} />
         <Route path="/home" element={<ProtectedRoute component={<Home />} isAuthenticated={isAuthenticated} />} />
         <Route path="/browser" element={<ProtectedRoute component={<Netflix />} isAuthenticated={isAuthenticated} />} />
         <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
+    </Routes>
   );
 }
 
