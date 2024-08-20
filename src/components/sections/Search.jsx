@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {NavLink} from 'react-router-dom'
 import axios from 'axios';
 import Slider from 'react-slick';
 import styles from './MediaGalery.module.css';
@@ -101,9 +102,9 @@ const Search = ({ query }) => {
      <Slider {...settings} className={styles.medias}>
         {movies.map((media) => (
           <div key={media.id}>
-          <a href='#' onClick={() => toggleModal(media)}>
+       <NavLink to='' onClick={() => toggleModal(media)}>
               <img src={`https://image.tmdb.org/t/p/w500${media.backdrop_path}`} alt={`Media ${media.name}`} className={styles.cover} />
-            </a>
+            </NavLink>
           </div>
         ))}
       </Slider>
@@ -121,9 +122,9 @@ const Search = ({ query }) => {
       <Slider {...settings} className={styles.medias}>
         {series2.map((media) => (
           <div key={media.id}>
-         <a href='#' onClick={() => toggleModal(media)}>
+       <NavLink to='' onClick={() => toggleModal(media)}>
               <img src={`https://image.tmdb.org/t/p/w500${media.backdrop_path}`} alt={`Media ${media.name}`} className={styles.cover} />
-            </a>
+            </NavLink >
           </div>
         ))}
       </Slider>
@@ -131,9 +132,9 @@ const Search = ({ query }) => {
       <Slider {...settings} className={styles.medias}>
         {movies2.map((media) => (
           <div key={media.id}>
-             <a href='#' onClick={() => toggleModal(media)}>
+              <NavLink to='' onClick={() => toggleModal(media)}>
               <img src={`https://image.tmdb.org/t/p/w500${media.backdrop_path}`} alt={`Media ${media.name}`} className={styles.cover} />
-            </a>
+            </NavLink >
           </div>
         ))}
       </Slider>

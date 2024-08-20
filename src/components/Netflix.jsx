@@ -142,7 +142,7 @@ const Netflix = () => {
     <header>
         <nav >
         { screen.width > 700 ? ( <><div className={styles.navNetflix}>
-            <a href='/browser'><img src={netflix} className={styles.netflix}></img></a>
+            <NavLink to='/browser'><img src={netflix} className={styles.netflix}></img></NavLink>
                 <NavLink to='/browser' onClick={()=>setShowAll(false)}>Inicio</NavLink>
                 <NavLink to='#' onClick={()=>setShowAll(!showAll)}>Series</NavLink>
                 <NavLink to='#' onClick={()=>setShowAll(!showAll)}>Filmes</NavLink>
@@ -194,11 +194,11 @@ const Netflix = () => {
                 <div className={styles.destaquebtns}>
                     <button className={styles.destaquebtnsWatch}>Assistir</button>    
                     <button className={styles.destaquebtnsMoreInfo}>+ Informações</button>
-                    {screen.width > 700 ? (<>{muted && (<a href='#' className={styles.muted} 
-                    onClick={() => setMute(!muted)}><BsVolumeMute size={38} /></a>
+                    {screen.width > 700 ? (<>{muted && ( <NavLink to ='#' className={styles.muted} 
+                    onClick={() => setMute(!muted)}><BsVolumeMute size={38} /></NavLink>
                     )}{!muted && (
-                    <a href='#' className={styles.muted} 
-                    onClick={() => setMute(!muted)}><GoUnmute size={38} /></a>
+                    <NavLink to ='#' className={styles.muted} 
+                    onClick={() => setMute(!muted)}><GoUnmute size={38} /></NavLink >
                     )}
                     </>
                  ) : (
@@ -235,13 +235,13 @@ const Netflix = () => {
     <footer>
             <div><FaFacebookF size={25} /><IoLogoInstagram size={25} /> <FaXTwitter size={25} /><FaYoutube size={25} /></div>
            <div> 
-            <a href=''>Audiodestrição</a> <a href=''>Central de Ajuda</a> <a href=''>Cartão pré-pago</a> <a href=''>Imprensa</a>
+            <a href='#'>Audiodestrição</a> <a href='#'>Central de Ajuda</a> <a href='#'>Cartão pré-pago</a> <a href='#'>Imprensa</a>
             </div>
             <div> 
-            <a href=''>Clone</a> <a href=''>by</a> <a href='https://github.com/EmersonCosttata'>Emerson </a> <a href='https://github.com/EmersonCosttata'>Costa</a>
+            <a href='#'>Clone</a> <a href='#'>by</a> <a href='https://github.com/EmersonCosttata'>Emerson </a> <a href='https://github.com/EmersonCosttata'>Costa</a>
             </div>
             <div> 
-            <a href=''>Curso +prati</a> <a href=''>DevFullstack</a> <a href=''>Obrigado Jaques</a> <a href=''>Tamo Junto</a>
+            <a href='#'>Curso +prati</a> <a href='#'>DevFullstack</a> <a href='#'>Obrigado Jaques</a> <a href='#'>Tamo Junto</a>
             </div>
             <button>Codigo de Serviço</button>
             <p>2024-2028 FakeNetflixApp</p>

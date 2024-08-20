@@ -7,27 +7,27 @@ const Home = () => {
             <h1>Quem está Assistindo?</h1>
             <div className={styles.person}>
                 <article>
-                    <a href='/browser'>
+                    <a href='/#/browser'>
                     <img src={avatar} alt='Person 1'></img>
                     <h5>Emerson</h5>
                     </a>
                 </article>
                 <article>
-                    <a href='/browser'>
+                    <a href='/#/browser'>
                     <img src={avatar} alt='Person 1'></img>
                     <h5>Hércolis</h5>
                     </a>
                 </article>
 
                 <article>
-                    <a href='/browser'>
+                    <a href='/#/browser'>
                     <img src={avatar} alt='Person 2'></img>
                     <h5>Felipe</h5>
                     </a>
                 </article>
 
                 <article>
-                <a href='/browser'>
+                <a href='/#/browser'>
                     <img src={avatar} alt='Person 3'></img>
                     <h5>Juliane</h5>
                 </a>

@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import Modal from './Modal';
 import { useState } from 'react';
-
+import {NavLink} from 'react-router-dom'
 import { FaPlay } from "react-icons/fa";
 import { BiLike } from "react-icons/bi";
 import { PiHighDefinition } from "react-icons/pi"
@@ -60,13 +60,13 @@ const MediaGalery = ({ title, medias }) => {
         <Slider {...settings} className={styles.medias}>
           {medias.map((media, index) => ( 
             <div key={index}>
-              <a href='#' onClickCapture={() => toggleModal(media)}>
+              <NavLink to='' onClickCapture={() => toggleModal(media)}>
                 <img 
                   src={`https://image.tmdb.org/t/p/w500${media.backdrop_path}`} 
                   alt={`Media ${index}`} 
                   className={styles.cover} 
                 />
-              </a>
+              </NavLink>
             </div>
           ))}
         </Slider>
