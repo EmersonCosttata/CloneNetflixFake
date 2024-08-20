@@ -1,0 +1,252 @@
+.netflix{
+    width: 10em;
+    padding: 1.1em;
+    margin-left: 9.9em;
+}
+.background{
+    background-image: url('../assets/fundo.jpg');
+    height: 100%;
+}
+.error{
+    border-radius: .25rem;
+    background-color: rgb(201, 145, 71);
+    padding: 0.7em;
+    margin-bottom: 1em;
+}
+.error p{
+    color: black;
+    font-weight: 600;
+    padding: 1em;
+    word-wrap: break-word;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5em;
+}
+.entrar{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    padding: 4em;
+    background-color: rgba(0, 0, 0, 0.808);
+    color:white;
+    border-radius: 10px;
+}
+.entrar h1{
+    font-weight: 700;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.entrar h4{
+    margin-bottom: 1em;
+    text-align: center;
+    color: grey;
+    font-size: .8rem;
+}
+.entrar input{
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding: 1.2em;
+    padding-left: .9em;
+    background-color: rgba(0, 0, 0, 0.171);
+    color: white;
+    border-radius: 0.25rem;
+}
+.entrar input::placeholder {
+    font-size: medium;
+    transition: transform 0.3s, font-size 0.3s;
+}
+.entrar input:focus::placeholder {
+    font-size: small;
+    transform: translateY(-1.25em);
+}
+
+.entrar input:hover{
+    transition: 0.3s;
+        background-color: #444444a4;
+}
+.passerro{
+    color: rgb(229, 9, 20);
+    margin-bottom: 1em;
+}
+.btn{
+    font-size: .8em;
+    margin-bottom:1em ;
+    padding: 1em;
+    color: white;
+    border-radius: 0.25rem;
+    background: rgb(229, 9, 20);
+    border-style: none;
+}
+.btn2{
+    font-size: .8em;
+    margin-bottom:1em ;
+    padding: 1em;
+    background-color: rgba(129, 128, 128, 0.171);
+    color: white;
+    border-radius: 0.25rem;
+    border-style: none;
+}
+.btn:hover{
+    transition: 0.3s;
+    background: rgba(229, 9, 20, 0.726);
+}
+
+.btn2:hover{
+    transition: 0.3s;
+    background-color: rgba(129, 128, 128, 0.445);
+}
+
+.entrar a{
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    font-size: .8em;
+}
+
+.entrar a:hover{
+    text-decoration:underline;
+}
+
+.entrar label{
+    margin-top: 1em;
+}
+.entrar label input{
+    margin-right: 0.7em;
+    margin-top: 0.7em;
+}
+.assine{
+    margin-top: 1em;
+    font-size: 0.8em;
+    color: gray;
+}
+
+footer{
+background-color: black;
+color: white;   
+height: 50vh;
+display: flex;
+justify-content: center;
+}
+
+.footerAll{
+    margin-top: 8em;
+    width: 160vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h4{
+    margin-top: 2em;
+    margin-left: 4em;
+}
+
+.footerAll div{
+    display: flex;
+    justify-content: start;
+}
+
+.footerAll div a{
+    font-size: small;
+    color: white;
+    margin-left: 4em;
+    padding: 1em;
+    padding-top: 2em;
+}
+
+.idioma{
+    width:10%;
+    margin-top: 1em;
+    margin-left: 4.8em;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: .25rem;
+    color:white;
+    padding: 0.55rem;
+}
+.idioma option{
+    color:rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+    
+    .netflix{
+        width: 10em;
+        padding: 1.1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .login{
+        display: flex;
+        justify-content: center;
+        padding-top: 0em;
+    }
+    .entrar{
+        height: 35rem;
+        padding-top: 8em;
+        display: flex;
+        flex-direction: column;
+        width:none;
+        background-color: rgba(0, 0, 0, 0.808);
+        color:white;
+        border-radius: 0;
+    }
+
+    footer{
+        margin: 0;
+        padding: 0;
+        background-color: rgba(0, 0, 0, 0.808);
+        color: white;   
+        height: 0;
+        display: flex;
+        justify-content: center;
+        }
+        
+        .footerAll{
+            background-color: rgba(0, 0, 0, 0.808);
+            margin: 0;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding-bottom: 1em;
+        }
+        
+        footer h4{
+            margin-top: 0;
+            margin-left: 0;
+        }
+        
+        .footerAll div{
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            flex-wrap: wrap;
+            margin: 0.05em;
+            padding: 0;
+        }
+        
+        .footerAll div a{
+            flex-wrap: wrap;
+            font-size: small;
+            color: white;
+            margin:0;
+            padding: 1em;
+
+        }
+    
+        .idioma{
+            width:30%;
+            margin-top: 0em;
+            margin-left: 0.8em;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: .25rem;
+            color:white;
+            padding: 0.59rem;
+        }
+        .navbar{
+            width: 0;
+        }
+  }

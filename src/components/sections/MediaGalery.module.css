@@ -1,0 +1,149 @@
+.media{
+    color: white;
+    padding-left: 2.5em;
+    margin-bottom: 2em;
+    width: 92vw;
+}
+
+.mediassearch{
+    color: white;
+    padding-left: 2.5em;
+    margin-bottom: 2em;
+    width: 92vw;
+    padding-top: 5em;
+}
+.mediassearch h1{
+    font-size: 1.3em;
+    padding-bottom: 1em; 
+}
+.media h1{
+    font-size: 1.3em;
+    padding-bottom: 1em;
+}
+
+.cover{
+    border-radius: .25rem;
+    width: 200px;
+}
+.medias a{
+    text-decoration: none;
+}
+.medias{
+display: flex;
+justify-content: center;
+}
+
+.detalhesmedia{
+    width: 50%;
+    height: 42rem;
+    text-align: center;
+    background-color: rgb(21, 22, 22);
+    border-radius: 1em;
+    position: fixed;
+    left: 23%;
+    top: 2em;
+}
+.detalhesmedia img{
+    display: block;
+    width: 100%;
+}
+
+.modalbtns{
+    display: flex;
+    justify-content: start;
+    margin-left: 1.5em;
+    margin-top: -4.5em;
+}
+.modalbtns button svg{
+    margin-right: .22315em;
+}
+
+.modalbtns a{
+    border: 2px solid #969292; 
+    background-color: rgba(0, 0, 0, 0.411);
+    border-radius: 150%;
+    padding: 0.25rem 0.55rem 0.25rem 0.55rem;
+    font-size: 1.5em;
+    margin: .55rem;
+    text-decoration: none;
+    color: white;
+}
+
+.modalbtns a svg{
+margin:-0.095rem;
+}
+.modalbtns button{
+  border-radius: 0.25rem;
+  background-color: white;
+  border: none;
+  padding: 0.45rem 1.5em 0.45rem 1.5em;
+  margin-right: 0.25em;
+  font-size: larger;
+}
+
+.modalbtns button:hover{
+    transition: 0.25s;
+    background-color: rgba(255, 255, 255, 0.596);
+  }
+  .modalinfos{
+    margin: 1.5em;
+    display: flex;
+    flex-direction: row;
+  }
+  .modalinfos section h1{
+    margin: 0.25rem;
+    margin-bottom: -1em;
+   text-align: start;
+  }
+  .modalinfos section p{
+    color: gray;
+    font-weight: 600;
+    text-align: start;
+    padding: 0.24rem;;
+  }
+  .modalinfos section p svg{
+  margin-bottom: -0.60em;
+  color: white;
+  }
+  .modalinfos section strong{
+    color: greenyellow;
+  }
+
+@media (max-width: 600px) {
+    .cover{
+        border-radius: .25rem;
+        width: 130px;
+    }
+
+    .mediassearch{
+        color: white;
+        padding-left: 2.5em;
+        margin-bottom: 2em;
+        width: 80vw;
+        padding-top: 10em;
+    }
+
+    .detalhesmedia{
+        width: 100%;
+        height: 40rem;
+        text-align: center;
+        background-color: rgb(21, 22, 22);
+        border-radius: 1em;
+        position: fixed;
+        left: 0;
+        top: 4em;
+    }
+    .detalhesmedia img{
+        display: block;
+        width: 100%;
+    }
+
+    .media{
+        color: white;
+        padding-left: 2.5em;
+        margin-bottom: 2em;
+        width: 80%;
+    }
+    
+
+}

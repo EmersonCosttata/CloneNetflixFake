@@ -1,0 +1,286 @@
+
+nav{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+position: fixed;
+z-index: 1000;
+}
+
+.navNetflix{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 0.65em;
+}
+
+.subnav{
+display: flex;
+align-items: center;
+padding-right: 3em;
+}
+
+.subnav img{
+   border-radius: .3rem;
+   width: 2.4rem;
+}
+
+.subnav input{
+    width: 10em;
+    background: transparent;
+    padding: 0.5em;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+}
+
+nav a.active{
+    font-weight: 900;
+}
+nav a:hover{
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.452);
+}
+.netflix{
+    padding-left: 1em;
+    width:8.4em;
+}
+
+.destaque{
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+}
+.destaqueinfo{
+    margin-top: -30%;
+    margin-left:5%;
+    display: flex;
+    flex-direction: column;
+    z-index: 900;
+    position: relative;
+}
+.nseries{
+    width: 10em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    filter: contrast(5%) brightness(99%);
+}
+.titleimg{
+    margin-left: -1vh;
+    width: 20em;
+}
+.destaquebtns{
+    margin-top: 1em;
+}
+.destaquebtnsWatch{
+    font-weight: 600;
+    border-radius: .25rem;
+    background-color: white;
+    border: none;
+    padding: 1em;
+    margin-left: 5px;
+}
+.destaquebtnsMoreInfo{
+    font-weight: 600;
+    border-radius: .25rem;
+    color: white;
+    background-color: grey;
+    border: none;
+    padding: 1em;
+    margin-left: 5px; 
+}
+.destaquebtnsWatch:hover{
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.603);
+}
+.destaquebtnsMoreInfo:hover{
+    transition: 0.3s;
+    background-color: rgba(128, 128, 128, 0.596);
+}
+
+.muted{
+    color:white;
+    margin-left: 65%;
+}
+.content{
+margin-top: 15em;    
+}
+footer{
+background-color: #141414;
+margin-top:5em;
+width: 100%;
+height: 11em;
+display: flex;
+justify-content: start;
+flex-direction: column;
+}
+footer div svg{
+ margin-right: 1.5em;
+}
+footer div{
+    padding: 1em;
+    margin-left: 10em;
+    display: flex;
+    flex-direction: row;
+}
+footer div a{
+    color:grey;
+    font-size:0.85em;
+    padding-right: 10em;
+    text-decoration: none;
+}
+footer p{
+    color:grey;
+    font-size:0.85em;
+    padding: 1em;
+    margin-left: 10rem;
+}
+footer button {
+    width: 10%;
+    background-color: transparent;
+    font-size: .8em;
+    border-style: solid;
+    border-radius: 0.25rem;
+    border-color: grey;
+    color: white;
+    padding: 0.5em;
+    transition: 0.5s;
+    margin-left: 11rem;
+}
+footer button:hover {
+    background-color: grey; 
+}
+
+@media (max-width: 700px) {
+   
+    .destaqueRsposivo{
+        border-radius: 0.35rem;
+        padding-top: 8em;
+        width: 94%;
+        opacity: calc(0.65);
+    }
+    .nseries{
+        width: 10em;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        filter: contrast(60%) brightness(999%);
+    }
+    .destaqueinfo{
+        margin-top: -16em;
+        margin-left: 1.5em;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        z-index: 900;
+        position: relative;
+    }
+
+    .content{
+        margin-top: 3em;    
+        }
+    .destaquebtnsWatch{
+        font-weight: 500;
+
+    }
+    .destaquebtnsMoreInfo{
+        font-weight: 500;
+    }
+
+    .netflix{
+        padding: 0;
+        margin: 0;
+        width: 8em;
+    }
+    nav{
+        padding-top: 0.5em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    .navNetflixResponsive{
+        display: flex;
+        align-items: center;
+        padding: 0.15em;
+        margin-left: .55rem;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        margin: 0.25em;
+    }
+    
+    .subnavResponsive{
+    display: flex;
+    align-items: end;
+    }
+    
+    .subnavResponsive img{
+       border-radius: .3rem;
+       width: 2rem;
+    }
+    
+    .subnavResponsive input{
+        width: 10em;
+        background: transparent;
+        padding: 0.5em;
+        color: white;
+        border: none;
+        border-radius: 0.25rem;
+    }
+ 
+    nav a.active{
+        font-weight: 900;
+    }
+
+    footer{
+        background-color: #141414;
+        margin-top:3em;
+        width: 100%;
+        height: 10em;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        }
+        footer div svg{
+         margin-right: 1.5em;
+        }
+        footer div{
+            padding: 0.6em;
+            margin-left: 0.5em;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        footer div a{
+            color:grey;
+            font-size:0.85em;
+            padding-right: 5em;
+            margin: 0.25em;
+            text-decoration: none;
+        }
+
+        footer button {
+            width: 40%;
+            background-color: transparent;
+            font-size: .8em;
+            border-style: solid;
+            border-radius: 0.25rem;
+            border-color: grey;
+            color: white;
+            padding: 0.5em;
+            transition: 0.5s;
+            margin-left: 1rem;
+        }
+        footer p{
+            margin-left: 0rem;
+        }
+  }

@@ -1,0 +1,79 @@
+
+
+.whoWatch {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.whoWatch article {
+    margin: 0.8em;
+    text-align: center;
+}
+
+.whoWatch img {
+    margin-top: 0.8em;
+    border-radius: 0.30rem;
+    width: 9em;
+    border: 2px solid transparent; 
+    transition: border-color 0.3s; 
+}
+.whoWatch article img:hover {
+    border-color: white;
+}
+
+.whoWatch article img:hover + h5 {
+    color: white; 
+}
+
+.whoWatch h1 {
+    font-size: 3.5em;
+}
+
+.whoWatch button {
+    background-color: transparent;
+    font-size: 1em;
+    border-style: solid;
+    border-radius: 0.25rem;
+    border-color: grey;
+    color: white;
+    padding: 0.5em;
+    transition: background-color 0.5s; 
+}
+
+.whoWatch button:hover {
+    background-color: rgba(128, 128, 128, 0.397);
+}
+
+.person h5 {
+    padding: 0.7em;
+    color: gray;
+    font-size: 1.5em;
+    transition: color 0.3s; 
+}
+
+.person h5:hover {
+    color: white; 
+}
+
+.person {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.person a {
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .whoWatch h1 {
+        font-size: 1.8em;
+    }
+  }
